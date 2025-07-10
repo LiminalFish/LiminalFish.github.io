@@ -1,21 +1,165 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href=styles.css />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Collins</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
-
 <body>
 
-	<div class="topnav">
-		<a id="home" class="active" href="https://wagyudev.github.io/">WagyuDEV</a>
-		<a class="other" href="projects.html">Projects</a>
-		<a class="other" href="gallery.html">Gallery</a>
-		<a class="other" href="about.html">About</a>
-	</div>
+    <header id="hero">
+        <div class="container">
+            <h1>Jackson Collins</h1>
+            <p class="tagline">Computer Science Student | Low-Level Development | IoT | Embedded Systems | Robotics</p>
+            <nav>
+                <ul>
+                    <!-- <li><a href="#about">About Me</a></li> -->
+                    <!-- <li><a href="#skills">Skills</a></li> -->
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-	<h1>Content Eventually</h1>
+    <!-- <section id="about" class="section-padding">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Jackson, I am a Computer Science student</p>
+            <p>I'm always eager to learn new technologies and contribute to innovative projects that push the boundaries of what's possible in these fields. I'm proficient in C/C++, Python, and assembly languages, with hands-on experience in microcontroller programming, sensor integration, and real-time operating systems.</p>
+        </div>
+    </section> -->
+
+    <!-- <section id="skills" class="section-padding bg-light">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>C/C++</li>
+                        <li>Python</li>
+                        <li>Go</li>
+                        <li>Java</li>
+                        <li>Javascript</li>
+                        <li>Odin</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Robotics</h3>
+                    <ul>
+                        <li>ROS (Robot Operating System)</li>
+                        <li>Kinematics & Dynamics</li>
+                        <li>Sensor Fusion</li>
+                        <li>Actuator Control</li>
+                        <li>Path Planning (Basic)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Technologies</h3>
+                    <li>OpenCV</li>
+                    <li></li>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <ul>
+                        <li>Git/GitHub</li>
+                        <li>Linux</li>
+                        <li>Soldering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>MochiCam</h3>
+                <p>Distributed internet camera system utilizing Publish/Subscribe architecture for video distribution</p>
+                <ul>
+                    <li>Python, Go, Webdev, NATS, ESP32, Arduino</li>
+                    <li><a href="https://github.com/LiminalFish/mochicam" target="_blank">View on GitHub</a>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Desmos 3D Models</h3>
+                <p>Fun Python script that turns STL files into triangles that can be rendered in <a href="https://www.desmos.com/3d">Desmos 3D</a></p>
+                <ul>
+                    <li>Python, Regex</li>
+                    <li><a href="https://github.com/LiminalFish/desmos3d" target="_blank">View on GitHub</a></li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Scanner</h3>
+                <p>Go program that scans a range of IPs for open HTTP servers</p>
+                <ul>
+                    <li>Go, Concurreny</li>
+                    <li><a href="https://github.com/LiminalFish/scanner" target="_blank">View on GitHub</a></li>
+                </ul>
+            </div>
+            </div>
+    </section>
+
+    <section id="experience" class="section-padding bg-light">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Technical Representative | UTSA IEEE RAS</h3>
+                <p class="date">January, 2025 - Present</p>
+                <ul>
+                    <li>Manage and maintain the RAS website</li>
+                    <li>Provide technical guidance and approval for proposed workshops</li>
+                    <li>Technical consulting</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Research Intern</h3>
+                <p class="date">July, 2024 - August, 2024</p>
+                <ul>
+                    <li>Transitioned <a href="https://github.com/BlackLightLabs/blacklight/tree/pt-rewrite" target="_blank">BlackLight</a> library from TensorFlow to PyTorch, modernizing it to allow for future development.</li>
+                    <li>Engineered a clean, documented codebase, streamlining onboarding for future collaborators.</li>                </ul>
+            </div>
+            </div>
+    </section>
+
+    <section id="education" class="section-padding">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <h4>Minor in Cyber Security</h2>
+                <p>University of Texas at San Antonio</p>
+                <p>Expected Graduation: May, 2028</p>
+                <!-- <p>Relevant Coursework: Operating Systems, Computer Architecture, Embedded Systems Design, Robotics, Data Structures & Algorithms.</p> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>I'm actively seeking internships and part-time opportunities in low-level development, IoT, embedded systems, and robotics. Feel free to connect with me!</p>
+            <ul class="contact-links">
+                <li><a href="mailto:jacksoncofficial3@gmail.com">jacksoncofficial3@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/jackson-collins0/" target="_blank">linkedin.com/in/jackson-collins0</a></li>
+                <li><a href="https://github.com/LiminalFish" target="_blank">github.com/LiminalFish</a></li>
+            </ul>
+            <hr>
+            <a class="contact-links" href="resume.pdf" target="_blank">Resume</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Jackson Collins. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
-
 </html>
